@@ -7,5 +7,6 @@ int main(){
   int n;
   cin >> n;
   vector <int> g(n);
-  
+  for(int i =0 ; i < n ; i++) cin >> g[i];
+
 }
