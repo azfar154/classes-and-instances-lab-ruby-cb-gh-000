@@ -2,5 +2,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-  cout<<"I am cool kids"<<endl;
+  freopen('g.in',stdin)
+  freopen('g.out',stdout)
+  
 }
