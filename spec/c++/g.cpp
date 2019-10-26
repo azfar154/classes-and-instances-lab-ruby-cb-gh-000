@@ -12,7 +12,7 @@ int main(){
   for(int i =0 ; i < n ; i++) cin >> d[i];
   map<int,int> g;
   for(int i : d)
-    g[i]++
+    g[i]++;
   for (int i : g)
     if (g[i] ==1)
       cout<<i<<endl;
