@@ -11,9 +11,9 @@ int main(){
   vector <int> d(n);
   for(int i =0 ; i < n ; i++) cin >> d[i];
   map<int,int> g;
-  for(auto i : d)
+  for(int i : d)
     g[i]++
-  for (auto i : g)
+  for (int i : g)
     if (g[i] ==1)
       cout<<i<<endl;
 }
