@@ -11,11 +11,11 @@ int main(){
   vector <int> d(n);
   for(int i =0 ; i < n ; i++) cin >> d[i];
   map<int,int> g;
-  for(int i : 0; i < d.length(); i++)
+  for(int i : 0; i < d.size(); i++)
   {
     g[d[i]]++
   }
-  for (int i : 0; i < d.length(); i++)
+  for (int i : 0; i < d.size(); i++)
   {
     if (g[v[i]) ==1)
       cout<<i<<endl;
