@@ -1,23 +1,21 @@
-#include <stdio.h>
-#include <iostream>
-#include <vector>
-#include <map>
+#include <bits/stdc++.h>
 using namespace std;
+
 int main(){
-  freopen("g.in","r",stdin);
-  freopen("g.out","w",stdout);
-  int n;
-  cin >> n;
-  vector <int> d(n);
-  for(int i =0 ; i < n ; i++) cin >> d[i];
-  map<int,int> g;
-  for(int i : 0; i < d.size(); i++)
-  {
-    g[d[i]]++
-  }
-  for (int i : 0; i < d.size(); i++)
-  {
-    if (g[v[i]) ==1)
-      cout<<i<<endl;
+    freopen("j.in", "r", stdin);
+    freopen("j.out", "w", stdout);
+    int n;
+    map <int,int> g;
+    cin >> n;
+    vector <int> v(n);
+    for(int i = 0; i<n; i++) cin >> v[i];
+    for(int i : v)
+        g[i]++;
+    for (int i: v){
+        if (g[i] == 1)
+        {
+            cout<<i << " ";
+        }
     }
+
 }
